@@ -1,0 +1,251 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+.container{
+    min-height:100vh;
+    background:#eaeaea;
+}
+
+/* ================= NAVBAR ================= */
+.navcontainer{
+    background:#000;
+    padding:18px 40px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+#navlist{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style:none;
+}
+
+#brand{
+    font-size:2.5rem;
+    font-weight:800;
+    letter-spacing:2px;
+    color:#fff;
+}
+
+#navitems{
+    display:flex;
+    gap:30px;
+}
+
+#navitems a{
+    text-decoration:none;
+    color:#fff;
+    font-size:1.2rem;
+    padding:6px 14px;
+    border:1px solid transparent;
+    transition:0.3s;
+}
+
+#navitems a:hover{
+    border:1px solid #fff;
+    background:#111;
+}
+
+/* ================= MAIN CONTENT ================= */
+.contentbox{
+    width:75%;
+    margin:40px auto;
+    padding:40px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+    /* paper-menu effect */
+    background:
+        linear-gradient(#fff,#fff) padding-box,
+        repeating-linear-gradient(
+            to bottom,
+            #f2f2f2,
+            #f2f2f2 1px,
+            #fff 1px,
+            #fff 32px
+        );
+}
+
+/* TAGLINE */
+.tagline{
+    text-align:center;
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#000;
+    margin-bottom:40px;
+    letter-spacing:1px;
+}
+
+/* ================= SECTION ================= */
+section{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:2px dashed #000;
+}
+
+section h1{
+    text-align:center;
+    font-size:2rem;
+    color:#000;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/* ================= MENU ITEM ================= */
+.item{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:25px;
+    margin-bottom:30px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* left border effect */
+.item::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:15%;
+    width:4px;
+    height:70%;
+    background:#000;
+    opacity:0;
+    transition:0.3s;
+}
+
+.item:hover{
+    background:#f0f0f0;
+    transform:translateY(-4px);
+}
+
+.item:hover::before{
+    opacity:1;
+}
+
+/* ================= LEFT CONTENT ================= */
+.leftbox{
+    width:60%;
+}
+
+.leftbox h2{
+    font-size:1.6rem;
+    color:#000;
+    margin-bottom:10px;
+}
+
+.leftbox ul{
+    margin:10px 0 15px 0;
+}
+
+.leftbox ul li{
+    list-style:none;
+    font-size:1.1rem;
+    color:#333;
+    margin-bottom:6px;
+    padding-left:20px;
+    position:relative;
+}
+
+/* rupee marker */
+.leftbox ul li::before{
+    content:"₹";
+    position:absolute;
+    left:0;
+    font-weight:bold;
+}
+
+.leftbox p{
+    font-weight:bold;
+    color:#555;
+    font-size:1rem;
+}
+
+/* BADGE */
+.badge{
+    background:#000;
+    color:#fff;
+    font-size:0.7rem;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-left:10px;
+    vertical-align:middle;
+    letter-spacing:1px;
+}
+
+/* ================= IMAGE ================= */
+.rightbox{
+    width:35%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.rightbox img{
+    width:280px;
+    border-radius:14px;
+    border:3px solid #000;
+    box-shadow:0 6px 15px rgba(0,0,0,0.35);
+    transition:0.3s;
+}
+
+.rightbox img:hover{
+    transform:scale(1.06);
+}
+
+/* ================= ADD-ONS ================= */
+.addons{
+    background:#f6f6f6;
+    border:1px solid #ccc;
+    border-radius:8px;
+    padding:25px;
+    font-size:1.2rem;
+}
+
+.addons li{
+    list-style:none;
+    padding:6px 0;
+    border-bottom:1px dotted #aaa;
+}
+
+/* ================= NOTE ================= */
+.note{
+    margin-top:40px;
+    padding:20px;
+    background:#e0e0e0;
+    border-left:6px solid #000;
+    text-align:center;
+    font-size:1.1rem;
+    font-weight:bold;
+    color:#000;
+}
+
+/* ================= FOOTER ================= */
+.footerbox{
+    background:#000;
+    padding:15px;
+    text-align:center;
+}
+
+.footerbox p{
+    color:#fff;
+    font-size:1.2rem;
+    letter-spacing:1px;
+}
+
+.footerbox p::after{
+    content:" • Authentic Highway Dhaba";
+    color:#aaa;
+    font-size:1rem;
+}
